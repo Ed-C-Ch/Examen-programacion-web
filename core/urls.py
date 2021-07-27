@@ -1,0 +1,60 @@
+from django.urls import path, include
+from . import views 
+
+urlpatterns = [
+    path('', views.home, name="home"),
+    path('ingresar', views.ingresar, name='ingresar'),
+    path('crearCuenta', views.nuevoCliente, name='crearCuenta'),
+    
+    path('perros', views.perros, name='perros'),
+    path('gatos', views.gatos, name='gatos'),
+    path('aves', views.aves, name='aves'),
+    path('reptiles', views.reptiles, name='reptiles'),
+    path('peces', views.peces, name='peces'),
+#perros
+    path('alimento', views.alimento, name='alimento'),
+    path('camas', views.camas, name='camas'),
+    path('casas', views.casas, name='casas'),
+    path('correas', views.correas, name='correas'),
+    path('comederos', views.comederos, name='comederos'),
+    path('limpieza', views.limpieza, name='limpieza'),
+    path('entrenamiento', views.entrenamiento, name='entrenamiento'),
+    path('farmacia', views.farmacia, name='farmacia'),
+    path('higiene', views.higiene, name='higiene'),
+    path('juguetes', views.juguetes, name='juguetes'),
+    path('pulgas', views.pulgas, name='pulgas'),
+    path('regalos', views.regalos, name='regalos'),
+    path('ropa', views.ropa, name='ropa'),
+    path('premios', views.premios, name='premios'),
+    path('transporte', views.transporte, name='transporte'),
+#gatos
+    path('alimentogato', views.alimentogato, name='alimentogato'),
+    path('camagato', views.camagato, name='camagato'),
+    path('arenagato', views.arenagato, name='arenagato'),
+    path('snackgato', views.snackgato, name='snackgato'),
+    path('collaresgato', views.collaresgato, name='collaresgato'),
+    path('farmaciagato', views.farmaciagato, name='farmaciagato'),
+    path('higienegato', views.higienegato, name='higienegato'),
+    path('juguetesgato', views.juguetesgato, name='juguetesgato'),
+    path('limpiezagato', views.limpiezagato, name='limpiezagato'),
+    path('pulgasgato', views.pulgasgato, name='pulgasgato'),
+    path('transportegato', views.transportegato, name='transportegato'),
+    path('ropagato', views.ropagato, name='ropagato'),
+    path('premiosgato', views.premiosgato, name='premiosgato'),
+    path('rascadoresgato', views.rascadoresgato, name='rascadoresgato'),
+#aves
+    path('alimentoave', views.alimentoave, name='alimentoave'),
+    path('comederoave', views.comederoave, name='comederoave'),
+    path('limpiezaave', views.limpiezaave, name='limpiezaave'),
+    path('entrenamientoave', views.entrenamientoave, name='entrenamientoave'),
+    path('higieneave', views.higieneave, name='higieneave'),
+    path('jaulasave', views.jaulasave, name='jaulasave'),
+    path('nidoave', views.nidoave, name='nidoave'),
+    path('perchasave', views.perchasave, name='perchasave'),
+#
+    path('fundacion', views.fundacion, name='fundacion'),
+    path('formularioMascota', views.animales, name='formularioMascota'),
+    path('compras', views.compras, name='compras'),
+    path('carrito', views.carrito, name='carrito'),
+
+]
